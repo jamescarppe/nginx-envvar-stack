@@ -2,5 +2,4 @@ version: "3"
 services:
   nginx:
     image: nginx:latest
-    environment:
-      - MY_ENV_VAR=${MY_ENV_VAR-foo}
+    env_file: "stack.env"
